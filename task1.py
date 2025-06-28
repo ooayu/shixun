@@ -13,7 +13,7 @@ radius = float(input("请输入圆的半径："))
 # 计算圆的面积（公式：面积 = π × 半径²）
 area = pi * radius ** 2
 # 输出结果，保留两位小数
-print(f"半径为 {radius} 的圆的面积是: {area:.2f}")
+print(f"\n半径为 {radius} 的圆的面积是: {area:.2f}")
 
 #第三题
 s = "5.31"
