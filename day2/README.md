@@ -21,8 +21,8 @@ class ElectricCar(Cars):
 with open(text_file, "r", encoding="utf-8") as f:   #读取文件
             new_names = [line.strip() for line in f if line.strip()]  #跳过空行
 ```
---异常处理
-   -try-except-finally
+>异常处理
+   try-except-finally
 ___
 ### *numpy* 的用法
 #### 1.数组的构建
@@ -33,9 +33,11 @@ arr = np.arange(1:7).reshape(2,3)
 ```
 
 #### 2.数组的索引
->array[:,1]
->array[1,2]
->array[1:,2]
+```
+array[:,1]
+array[1,2]
+array[1:,2]
+```
 
 布尔索引
 ```
