@@ -2,8 +2,17 @@ import os
 import re
 
 def natural_sort_key(s):
-    """自然排序键函数，使 '1.jpg', '2.jpg', '10.jpg' 正确排序"""
-    return [int(text) if text.isdigit() else text.lower() for text in re.split('([0-9]+)', s)]
+    """实现特定排序规则：数字按自然���序，但带前导零的数字排在相同值的数字之前"""
+    def convert(text):
+        if text.isdigit():
+            num_val = int(text)
+            # 如果是以0开头的数字，返回一个特殊的元组使其排在普通数字之前
+            if text.startswith('0') and len(text) > 1:
+                return (num_val - 0.5, text)
+            return (num_val, text)
+        return text.lower()
+
+    return [convert(p) for p in re.split('([0-9]+)', s)]
 
 def rename_images_from_text(image_folder, text_file, output_extension=None):
     """
