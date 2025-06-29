@@ -2,6 +2,10 @@ class Car:
     def __init__(self, brand, speed=0):
         """
         初始化 Car 类
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 16afac5508f832a6e4857c6ddf3981849a697eed
         参数:
             brand (str): 汽车品牌
             speed (int): 初始速度，默认为 0
@@ -12,6 +16,10 @@ class Car:
     def accelerate(self, m):
         """
         加速方法：速度增加 m 次，每次增加 10
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 16afac5508f832a6e4857c6ddf3981849a697eed
         参数:
             m (int): 加速次数
         """
@@ -22,6 +30,10 @@ class Car:
     def brake(self, n):
         """
         刹车方法：速度减少 n 次，每次减少 10，但速度不低于 0
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 16afac5508f832a6e4857c6ddf3981849a697eed
         参数:
             n (int): 刹车次数
         """
@@ -53,7 +65,10 @@ my_car.accelerate(1)
 print("\n最终状态:", my_car)
 
 
+<<<<<<< HEAD
 #创建ElectircCar子类，继承Car
+=======
+>>>>>>> 16afac5508f832a6e4857c6ddf3981849a697eed
 class ElectricCar(Car):
     def __init__(self, brand, speed=0, battery=50):
         """
