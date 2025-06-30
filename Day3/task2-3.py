@@ -13,7 +13,7 @@ def one():
         print("图片路径列表：", listImg)
 
         # 创建保存目录
-        save_dir = r"d:\Python_work"
+        save_dir = r"d:\Python_work\picture"
         os.makedirs(save_dir, exist_ok=True)
 
         for idx, img_path in enumerate(listImg):
