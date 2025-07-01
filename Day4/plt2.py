@@ -45,6 +45,6 @@ plt.show()
 plt.figure(figsize=(8, 8))
 plt.pie(gdp_2015, labels=cities, autopct='%1.1f%%', startangle=140)
 plt.title('2015年各个地区生产总值占比')
+#保存图片 在show之前
 plt.savefig('chengshi.png')
 plt.show()
-
