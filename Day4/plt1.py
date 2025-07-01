@@ -33,6 +33,7 @@ for i in range(len(x)):
              va='bottom', ha='center', fontsize=8)
  
 # 由于原代码在文本标签循环中存在错误，上述已更正为使用range(len(x))进行遍历，并将奖牌数转换为字符串显示
- 
+plt.rcParams['font.sans-serif'] = ['Simhei']
+plt.rcParams['axes.unicode_minus'] = False
 # 显示图形
 plt.show()
